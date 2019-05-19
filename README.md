@@ -9,7 +9,7 @@ This project demonstrates how to integrate The Grove - 16-Channel PWM Driver  wi
 * A Grove IoT Expansion card.
 * The Grove - 16-Channel PWM Driver: See detail information on wiki page: http://wiki.seeedstudio.com/Grove-16-Channel_PWM_Driver-PCA9685/ 
 
-<img src="https://user-images.githubusercontent.com/17214533/57901207-43d17380-788e-11e9-9cc8-df3ccf7cab8f.jpg" width="350" alt="accessibility text"> 
+<img src="https://user-images.githubusercontent.com/17214533/57985768-012eb780-7a97-11e9-8e96-95885f42e06c.jpg" width="350" alt="accessibility text"> 
 
 The Grove - 16-Channel PWM Driver
 ------------------
