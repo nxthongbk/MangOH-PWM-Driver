@@ -1,0 +1,30 @@
+executables:
+{
+	pwmControl = ( pwmControlComponent )
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( pwmControl )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+bindings:
+{
+	pwmControl.pwmControlComponent.ma_pwm -> pwmDriver.ma_pwm
+	pwmControl.pwmControlComponent.io -> dataHub.io
+	pwmControl.pwmControlComponent.admin -> dataHub.admin
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K

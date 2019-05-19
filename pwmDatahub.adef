@@ -1,0 +1,29 @@
+executables:
+{
+	pwmDatahub = ( pwmDatahubComponent )
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( pwmDatahub )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+bindings:
+{
+	pwmDatahub.pwmDatahubComponent.io -> dataHub.io
+	pwmDatahub.pwmDatahubComponent.admin -> dataHub.admin
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K

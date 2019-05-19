@@ -1,0 +1,25 @@
+sources:
+{
+	pwmControlComponent.c
+}
+
+requires:
+{
+	api:
+	{
+		$CURDIR/../ma_pwm.api
+		$LEGATO_ROOT/apps/sample/dataHub/io.api
+		$LEGATO_ROOT/apps/sample/dataHub/admin.api
+	}
+	component:
+	{
+		$LEGATO_ROOT/apps/sample/dataHub/components/json
+	}
+}
+
+cflags:
+{
+	-I$LEGATO_ROOT/apps/sample/dataHub/components/json
+}
+
+
